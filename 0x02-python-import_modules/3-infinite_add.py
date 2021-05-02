@@ -5,5 +5,5 @@ if __name__ == '__main__':
     suma = 0
 
     for i in range(1, n):
-       suma += int(argv[i])
+        suma += int(argv[i])
     print(suma)
