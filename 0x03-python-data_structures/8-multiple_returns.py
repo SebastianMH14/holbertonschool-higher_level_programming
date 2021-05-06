@@ -2,4 +2,5 @@
 def multiple_returns(sentence):
     a = len(sentence)
     b = sentence[0]
-    return (a, b)
+    if a != 0:
+        return (a, b)
