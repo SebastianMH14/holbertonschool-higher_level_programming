@@ -7,7 +7,7 @@ class Square:
     def __init__(self, size=0):
         """init class"""
         if isinstance(size, int) is True:
-            self._Square__size = size
+            self.__Square__size = size
         else:
             raise TypeError("size must be an integer")
         if size < 0:
@@ -15,4 +15,4 @@ class Square:
 
 def area(self):
     """ the squere area """
-    return self._size ** 2
+    return self.__size ** 2
