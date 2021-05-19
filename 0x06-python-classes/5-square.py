@@ -27,7 +27,7 @@ class Square:
         """the squere area"""
         return self.__size ** 2
 
-    def print_c(self):
+    def my_print(self):
         """print square"""
         if self.__size == 0:
             print()
