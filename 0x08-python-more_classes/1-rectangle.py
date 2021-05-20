@@ -11,7 +11,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ accediendo a atributo privado"""
+        """accediendo a atributo privado"""
         return self.__height
 
     @height.setter
