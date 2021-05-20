@@ -9,11 +9,15 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-
     @property
     def height(self):
         """accediendo a atributo privado"""
         return self.__height
+
+    @property
+    def width(self):
+        """accediendo a atributo privado"""
+        return self.__width
 
     @height.setter
     def height(self, value):
@@ -24,11 +28,6 @@ class Rectangle:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-
-    @property
-    def width(self):
-        """accediendo a atributo privado"""
-        return self.__width
 
     @width.setter
     def width(self, value):
