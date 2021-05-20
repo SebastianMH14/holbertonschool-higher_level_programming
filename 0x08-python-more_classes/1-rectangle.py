@@ -19,21 +19,21 @@ class Rectangle:
         """accediendo a atributo privado"""
         return self.__width
 
-    @width.setter
-    def width(self, value):
-        """width setter"""
-        if isinstance(value, int) is True:
-            self._Rectangle__width = value
-        else:
-            raise TypeError("size must be an integer")
-        if value < 0:
-            raise ValueError("size must be >= 0")
-
     @height.setter
     def height(self, value):
         """height setter"""
         if isinstance(value, int) is True:
             self._Rectangle__height = value
+        else:
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+
+    @width.setter
+    def width(self, value):
+        """width setter"""
+        if isinstance(value, int) is True:
+            self._Rectangle__width = value
         else:
             raise TypeError("size must be an integer")
         if value < 0:
