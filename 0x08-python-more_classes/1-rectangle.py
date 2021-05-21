@@ -32,7 +32,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """height setter and raise errors """
+        """height setter and raise errors"""
         if isinstance(value, int):
             self.__height = value
         else:
