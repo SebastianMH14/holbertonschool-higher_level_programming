@@ -10,31 +10,31 @@ class Rectangle:
         self.height = height
 
     @property
-    def height(self):
-        """accediendo a atributo privado"""
-        return self.__height
-
-    @property
     def width(self):
         """accediendo a atributo privado"""
         return self.__width
 
-    @height.setter
-    def height(self, value):
-        """height setter"""
-        if isinstance(value, int) is True:
-            self.__height = value
-        else:
-            raise TypeError("heigth must be an integer")
-        if value < 0:
-            raise ValueError("heigth must be >= 0")
-
     @width.setter
     def width(self, value):
-        """width setter"""
+        """width setter and raise errors"""
         if isinstance(value, int) is True:
             self.__width = value
         else:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
+
+    @property
+    def height(self):
+        """accediendo a atributo privado"""
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """height setter and raise errors"""
+        if isinstance(value, int) is True:
+            self.__height = value
+        else:
+            raise TypeError("heigth must be an integer")
+        if value < 0:
+            raise ValueError("heigth must be >= 0")
