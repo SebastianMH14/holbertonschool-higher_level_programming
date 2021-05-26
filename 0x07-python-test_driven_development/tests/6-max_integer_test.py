@@ -12,3 +12,4 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([2]), 2)
         self.assertEqual(max_integer([-30, -10, -40]), -10)
         self.assertIsNone(max_integer([]))
+        self.assertEqual(max_integer([30, 10, 20]), 30)
