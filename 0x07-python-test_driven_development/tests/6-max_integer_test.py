@@ -10,5 +10,5 @@ class TestMaxInteger(unittest.TestCase):
     def test_listmax(self):
         self.assertEqual(max_integer([1, 2, 10000]), 10000)
         self.assertEqual(max_integer([2]), 2)
-        self.assertEqual(max_integer([-10, -20, -30]), -10)
-    
+        self.assertEqual(max_integer([-30, -10, -40]), -10)
+        self.assertIsNone(max_integer([]))
