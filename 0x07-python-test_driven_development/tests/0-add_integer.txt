@@ -17,3 +17,7 @@ TypeError: b must be an integer
 100
 >>> add_integer(25.6, 29.43)
 54
+>>> add_integer(float('inf'), 15)
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
