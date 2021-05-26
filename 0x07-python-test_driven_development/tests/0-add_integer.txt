@@ -15,4 +15,5 @@ Traceback (most recent call last):
 TypeError: b must be an integer
 >>> add_integer(2, )
 100
-
+>>> add_integer(10.152999999999999999999999999999999999, 2)
+12
