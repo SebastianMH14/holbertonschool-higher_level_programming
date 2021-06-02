@@ -1,3 +1,32 @@
 >>> MyList = __import__('1-my_list').MyList
 
->>>MyList(my_list)
+>>> first_list = MyList()
+>>> first_list.append(10)
+>>> first_list.append(20)
+>>> first_list.append(30)
+>>> first_list.append(60)
+>>> first_list.append(50)
+>>> print(first_list)
+[10, 20, 30, 60, 50]
+>>> first_list.print_sorted()
+[10, 20, 30, 50, 60]
+
+>>> list_two = MyList()
+>>> list_two.append(-500)
+>>> list_two.append(-200)
+>>> list_two.append(-300)
+>>> list_two.append(-800)
+>>> list_two.append(-600)
+>>> print(list_two)
+[-500, -200, -300, -800, -600]
+>>> list_two.print_sorted()
+[-800, -600, -500, -300, -200]
+
+>>> list_three = MyList()
+>>> list_three.append(1)
+>>> list_three.append(-2)
+>>> list_three.append(3)
+>>> print(list_three)
+[1, -2, 3]
+>>> list_three.print_sorted()
+[-2, 1, 3]
