@@ -1,2 +1,24 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+>>> gm = BaseGeometry()
+>>> gm.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+>>> gm.integer_validator("hello", "world")
+Traceback (most recent call last):
+    ...
+TypeError: hello must be an integer
+
+>>> gm.integer_validator("name", 100)
+
+>>> gm.integer_validator("name", -100)
+Traceback (most recent call last):
+    ...
+ValueError: name must be greater than 0
+
+>>> gm.integer_validator("name", 0)
+Traceback (most recent call last):
+    ...
+ValueError: name must be greater than 0
