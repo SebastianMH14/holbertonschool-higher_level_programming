@@ -22,3 +22,16 @@ ValueError: name must be greater than 0
 Traceback (most recent call last):
     ...
 ValueError: name must be greater than 0
+
+>>> hola = "mundo"
+>>> valu_e = 100
+>>> gm.integer_validator(hola, valu_e)
+
+>>>valu_e = "mundo"
+>>>gm.integer_validator(hola, valu_e)
+Traceback (most recent call last):
+    ...
+TypeError: mundo must be an integer
+
+>>> print(gm.integer_validator("height", 90))
+None
