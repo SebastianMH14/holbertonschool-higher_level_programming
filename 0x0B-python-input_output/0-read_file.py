@@ -7,4 +7,4 @@ def read_file(filename=""):
     """use the with statement"""
     with open(filename, "r+") as file:
         a = file.read()
-        print(a)
+        print(a, end="")
