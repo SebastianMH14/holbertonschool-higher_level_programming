@@ -12,5 +12,6 @@ class Rectangle(BaseGeometry):
         """constructor de clase"""
         self.__width = width
         self.__heigth = height
+        super().__init__()
         self.integer_validator("width", self.__width)
         self.integer_validator("heigth", self.__heigth)
