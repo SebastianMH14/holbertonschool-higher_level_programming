@@ -40,3 +40,13 @@
 [1, 2, 1, 5]
 >>> list_four.print_sorted()
 [1, 1, 2, 5]
+
+>>> list_five = MyList()
+>>> list_five.append(1)
+>>> list_five.append(2)
+>>> list_five.append(3)
+>>> list_four.append(4)
+>>> print(list_four)
+[1, 2, 3, 4]
+>>> list_four.print_sorted()
+[1, 2, 3, 4]
