@@ -45,8 +45,8 @@
 >>> list_five.append(1)
 >>> list_five.append(2)
 >>> list_five.append(3)
->>> list_four.append(4)
->>> print(list_four)
+>>> list_five.append(4)
+>>> print(list_five)
 [1, 2, 3, 4]
->>> list_four.print_sorted()
+>>> list_five.print_sorted()
 [1, 2, 3, 4]
