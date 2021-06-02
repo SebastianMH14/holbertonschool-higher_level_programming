@@ -5,6 +5,7 @@ from Rectangle (9-rectangle.py)"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """creating a class"""
 
