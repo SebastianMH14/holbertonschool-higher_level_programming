@@ -5,10 +5,6 @@
 class BaseGeometry:
     """creating a class"""
 
-    def __init__(self):
-        """creating constructor"""
-        pass
-
     def area(self):
         """raises an Exception with the
         message area() is not implemented"""
