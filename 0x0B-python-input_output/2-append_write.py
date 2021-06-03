@@ -5,7 +5,7 @@ number of characters written
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """use the with statement"""
     with open(filename, 'a', encoding="utf-8") as file:
         a = file.write(text)
