@@ -4,7 +4,9 @@
 
 
 def read_file(filename=""):
-    """use the with statement"""
+    """use the with statement
+    and create function
+    """
     with open(filename, 'r', encoding="utf-8") as file:
         a = file.read()
         print(a, end="")
