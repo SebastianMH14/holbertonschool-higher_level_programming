@@ -33,7 +33,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """ accediendo a atributo privado"""
+        """accediendo a atributo privado"""
         return self.__height
 
     @height.setter
@@ -48,7 +48,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """ accediendo a atributo privado"""
+        """accediendo a atributo privado"""
         return self.__x
 
     @x.setter
@@ -63,7 +63,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """ accediendo a atributo privado"""
+        """accediendo a atributo privado"""
         return self.__y
 
     @x.setter
