@@ -10,10 +10,10 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """constructor de clase"""
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
         super().__init__(id)
 
     @property
@@ -42,9 +42,9 @@ class Rectangle(Base):
         if type(value) is int:
             self.__height = value
         else:
-            raise TypeError("heigth must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("heigth must be > 0")
+            raise ValueError("height must be > 0")
 
     @property
     def x(self):
