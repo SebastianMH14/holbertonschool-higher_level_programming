@@ -66,7 +66,7 @@ class Rectangle(Base):
         """accediendo a atributo privado"""
         return self.__y
 
-    @x.setter
+    @y.setter
     def y(self, value):
         """y setter"""
         if type(value) == int:
