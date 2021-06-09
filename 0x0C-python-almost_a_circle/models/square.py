@@ -52,8 +52,7 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """adding metod"""
-        dic_t = {}
-        for k in self.__dict__:
-            k_n = k.replace("_Square__", "")
-            dic_t[k_n] = self.__dict__[k]
+        dic_t = {
+            "id": self.id, "size": self.width, "x": self.x, "y": self.y
+        }
         return dic_t
