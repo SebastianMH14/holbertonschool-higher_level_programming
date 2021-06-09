@@ -118,6 +118,6 @@ class Rectangle(Base):
         """adding metod"""
         dic_t = {}
         for k in self.__dict__:
-            k_n = k.replace("_Rctangle_", "")
+            k_n = k.replace("_Rctangle__", "")
             dic_t[k_n] = self.__dict__[k]
         return dic_t
