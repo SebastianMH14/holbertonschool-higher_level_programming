@@ -110,6 +110,6 @@ class Rectangle(Base):
                     setattr(self, "x", args[3])
                 if i == 4:
                     setattr(self, "y", args[4])
-            else:
-                for key, value in kwargs.items():
-                    setattr(self, key, value)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
