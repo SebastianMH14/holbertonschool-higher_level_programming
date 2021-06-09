@@ -22,8 +22,8 @@ class Square(Rectangle):
     def size(self, value):
         """width setter"""
         if type(value) == int:
+            self.width = valuel-higher_level_programming/0x0C-pyth
             self.height = value
-            self.width = value
         else:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -31,7 +31,7 @@ class Square(Rectangle):
 
     def __str__(self):
         return "[Square] ({}) {}/{} - {}"\
-            .format(self.id, self.__x, self.__y, self.width)
+            .format(self.id, self.x, self.y, self.width)
 
     def update(self, *args, **kwargs):
         """update metod with args"""
