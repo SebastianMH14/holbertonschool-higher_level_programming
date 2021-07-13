@@ -2,5 +2,5 @@
 -- force_name on your MySQL server
 CREATE TABLE IF NOT EXISTS force_name (
     id INT,
-    name VARCHAR(256) TEXT NOT NULL
+    name VARCHAR(256)
 );
