@@ -12,5 +12,5 @@ if (x) {
     console.log(square);
   }
 } else {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 }
