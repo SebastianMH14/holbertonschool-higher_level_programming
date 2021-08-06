@@ -9,6 +9,7 @@ from sys import argv
 user = argv[1]
 passwd = argv[2]
 db = argv[3]
+namesh = argv[4]
 
 conn = MySQLdb.connect(
     host="localhost",
@@ -18,7 +19,8 @@ conn = MySQLdb.connect(
     db=db,
     charset="utf8")
 cur = conn.cursor()
-cur.execute("SELECT * FROM states ORDER BY id ASC")
+cur.execute("SELECT * FROM states \
+    WHERE name = (\'%s\') ORDER BY id ASC" % (namesh))
 query_rows = cur.fetchall()
 for row in query_rows:
     print(row)
