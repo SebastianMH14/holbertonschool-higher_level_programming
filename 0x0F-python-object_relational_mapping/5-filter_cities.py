@@ -26,8 +26,11 @@ if __name__ == '__main__':
         WHERE states.name = BINARY '{}' \
         ORDER BY cities.id ASC".format(namesh))
     query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row[0], end=", ")
+    for row in range(len(query_rows)):
+        if row == len(query_rows) - 1:
+            print("{}".format(query_rows[row][0]), end="")
+        else:
+            print("{}, ".format(query_rows[row][0]), end="")
     print()
     cur.close()
     conn.close()
