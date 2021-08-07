@@ -23,9 +23,9 @@ if __name__ == '__main__':
     Session = sessionmaker(engine)
     session = Session()
 
-    first_query = session.query(State).first()
+    first_query = session.query(State ).first()
 
-    if first_query == null:
+    if first_query is null:
         print("Nothing")
     else:
         print("{}: {}".format(first_query.id, first_query.name))
