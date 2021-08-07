@@ -3,6 +3,7 @@
 State object from the database
 hbtn_0e_6_usa"""
 
+from sqlalchemy.sql.expression import null
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sys import argv
@@ -21,6 +22,9 @@ if __name__ == '__main__':
 
     Session = sessionmaker(engine)
     session = Session()
-    for state in session.query(State).filter(State.id <= 1):
+
+    first_query = session.query(State).filter(State.id == 1)
+    for state in first_query:
         print("{}: {}".format(state.id, state.name))
+
     session.close()
