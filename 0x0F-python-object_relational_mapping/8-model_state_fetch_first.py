@@ -24,9 +24,10 @@ if __name__ == '__main__':
 
     first_query = session.query(State).first()
 
-    if first_query is null:
-        print("Nothing")
-    else:
+    if first_query is not null:
         print("{}: {}".format(first_query.id, first_query.name))
+    else:
+        print("Nothing")
+        
 
     session.close()
