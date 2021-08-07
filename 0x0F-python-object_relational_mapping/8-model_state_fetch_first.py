@@ -18,16 +18,15 @@ if __name__ == '__main__':
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost/{}'
         .format(user, passwd, db), pool_pre_ping=True)
-
+    
     Session = sessionmaker(engine)
     session = Session()
 
     first_query = session.query(State).first()
 
-    if first_query is not null:
-        print("{}: {}".format(first_query.id, first_query.name))
-    else:
+    if first_query is None:
         print("Nothing")
-        
+    else:
+        print("{}: {}".format(first_query.id, first_query.name))
 
     session.close()
