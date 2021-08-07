@@ -23,8 +23,8 @@ if __name__ == '__main__':
     cur.execute("SELECT cities.name  \
         FROM cities INNER JOIN states \
         ON states.id = cities.state_id \
-        WHERE states.name = (\'%s\') \
-        ORDER BY cities.id ASC"  % (namesh))
+        WHERE states.name = BINARY '{}' \
+        ORDER BY cities.id ASC".format(namesh))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row[0], end=", ")
