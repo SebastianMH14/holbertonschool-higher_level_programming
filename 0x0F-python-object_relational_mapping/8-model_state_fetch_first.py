@@ -23,11 +23,11 @@ if __name__ == '__main__':
     Session = sessionmaker(engine)
     session = Session()
 
-    first_query = session.query(State.id).filter(State.id == 1)
-    for state in first_query:
-        if state == null:
-            print("Nothing")
-        else:
-            print("{}: {}".format(state.id, state.name))
+    first_query = session.query(State).first()
+
+    if first_query == null:
+        print("Nothing")
+    else:
+        print("{}: {}".format(first_query.id, first_query.name))
 
     session.close()
