@@ -18,12 +18,11 @@ if __name__ == '__main__':
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost/{}'
         .format(user, passwd, db), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
 
     Session = sessionmaker(engine)
     session = Session()
 
-    first_query = session.query(State ).first()
+    first_query = session.query(State).first()
 
     if first_query is null:
         print("Nothing")
